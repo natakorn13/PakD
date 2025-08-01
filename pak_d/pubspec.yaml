@@ -1,0 +1,74 @@
+name: pak_d
+description: AI Image Detection
+
+# เพิ่ม publish_to เพื่อระบุว่าไม่ต้องการเผยแพร่บน pub.dev
+publish_to: 'none'
+
+# ปรับเวอร์ชัน Flutter SDK ให้เป็นปัจจุบัน
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # เพิ่ม cupertino_icons ซึ่งเป็น dependency มาตรฐานของ Flutter
+  cupertino_icons: ^1.0.6
+  
+  # อัพเดท dependencies ที่มีอยู่แล้วให้เป็นเวอร์ชันล่าสุด
+  http: ^1.1.0
+  image_picker: ^1.0.4
+  web_socket_channel: ^2.4.0
+  
+  # อาจเพิ่ม dependencies อื่นๆ ที่จำเป็น เช่น
+  path_provider: ^2.1.1
+  flutter_dotenv: ^5.1.0
+
+  camera: ^0.10.5+9          
+  image: ^4.1.7              
+  path: ^1.9.0  
+
+  permission_handler: ^11.3.1 # หรือเวอร์ชันล่าสุด
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.14.4"
+  flutter_lints: ^3.0.1
+  
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.webp"
+  
+  
+  
+
+# เพิ่มการกำหนดค่า Flutter
+flutter:
+  # ระบุว่าใช้ Material Design
+  uses-material-design: true
+  
+  assets:
+    - assets/oral_cancer.png
+    - assets/canker_sore.png
+    - assets/herpes_simplex.png
+    - assets/mouth_ulcer.png
+    - assets/home.png
+    - assets/howto.png
+    - assets/icon.webp
+    - assets/ioc.png
+    - assets/ooc.png
+    - assets/mu2.png
+    - assets/cs2.png
+    - assets/hsm.png
+    - assets/hsl.png
+    
+ 
+  # fonts:
+  #   - family: CustomFont
+  #     fonts:
+  #       - asset: fonts/CustomFont-Regular.ttf
+  #       - asset: fonts/CustomFont-Bold.ttf
+  #         weight: 700
